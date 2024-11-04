@@ -2,8 +2,6 @@
 import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
 
-interface SelectProps extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Root> { }
-
 const Select = SelectPrimitive.Root
 
 const SelectGroup = SelectPrimitive.Group
