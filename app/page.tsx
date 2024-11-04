@@ -1,6 +1,7 @@
 // app/page.tsx
 import { Metadata } from 'next'
 import SpotifyArtGenerator from '@/components/SpotifyArtGenerator'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: 'Spotify Cover Art',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <Analytics />
       <SpotifyArtGenerator />
     </main>
   )
