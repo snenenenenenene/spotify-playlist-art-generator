@@ -3,9 +3,7 @@
 import React, { useState, useRef, useCallback } from 'react';
 import {
 	Upload,
-	Image as ImageIcon,
 	Plus,
-	Minus,
 	Download,
 	ChevronDown,
 	Menu,
@@ -14,7 +12,6 @@ import {
 	RotateCw,
 	Trash2,
 	Settings,
-	ArrowLeft,
 	Eye
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -137,7 +134,7 @@ const SpotifyArtGenerator: React.FC = () => {
 		const canvas = document.createElement('canvas');
 		canvas.width = 1000;
 		canvas.height = 1000;
-		const ctx = canvas.getContext('2d');
+		const ctx: any = canvas.getContext('2d');
 
 		if (!ctx) return;
 
